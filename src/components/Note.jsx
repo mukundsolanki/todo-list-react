@@ -1,11 +1,17 @@
-function App() {
-    return (
-      <div className="note">
-        <h1>Title</h1>
-        <p>This ia  a paragraph</p>
-      </div>
-    );
+import React from "react";
+
+function Note(props) {
+  function handleClick() {
+    props.onDelete(props.id);
   }
-  
-  export default App;
-  
+
+  return (
+    <div className="note">
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
+      <button onClick={handleClick}>DELETE</button>
+    </div>
+  );
+}
+
+export default Note;

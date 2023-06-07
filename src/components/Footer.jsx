@@ -1,10 +1,10 @@
+import React from 'react'
 function Footer() {
+  let year = new Date();
     return (
       <footer>
-        <h1>This is a footer element</h1>
+        <p>This is a footer element { year.getFullYear() }</p>
       </footer>
     );
   }
-  
   export default Footer;
-  

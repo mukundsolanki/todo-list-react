@@ -1,7 +1,9 @@
+import React from 'react'
+
 function Header() {
     return (
       <header>
-        <h1>This is Header</h1>
+        <h1>ToDo-List App</h1>
       </header>
     );
   }
