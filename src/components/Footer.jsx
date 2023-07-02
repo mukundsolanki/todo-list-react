@@ -3,7 +3,7 @@ function Footer() {
   let year = new Date();
     return (
       <footer>
-        <p>This is a footer element { year.getFullYear() }</p>
+        <p>Mukund Solanki || { year.getFullYear() }</p>
       </footer>
     );
   }
